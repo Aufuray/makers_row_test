@@ -36,8 +36,8 @@ describe('Brands', function () {
             .end(function (err, res) {
                 if (err) return done.fail(res);
                 expect(res.body.name).not.toBeNull();
-                expect(res.body.company_type).toEqual('Brand');
                 done(res);
             });
     });
+
 });

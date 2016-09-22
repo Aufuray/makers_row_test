@@ -23,4 +23,9 @@ router.get('/:id', function(req, res, next) {
   companyHandler.listWithId(res, req);
 });
 
+/* DELETE factory with ID */
+router.get('/delete/:id', function(req, res, next) {
+    companyHandler.deleteWithID(res, req);
+});
+
 module.exports = router;

@@ -22,7 +22,7 @@ describe('Factories', function () {
     });
     it('gets a single factory', function (done) {
         request(app)
-            .get('/factories/9b85dde2-5ff7-4f20-b3d7-613f33763052')
+            .get('/factories/aced63e4-8929-40c6-8916-30514edce8e7')
             .expect(200)
             .end(function(err, res) {
                 if (err) return done.fail(res);
@@ -46,8 +46,8 @@ describe('Factories', function () {
             .end(function (err, res) {
                 if (err) return done.fail(res);
                 expect(res.body.name).not.toBeNull();
-                expect(res.body.company_type).toEqual('Factory');
                 done(res);
             });
     });
+
 });

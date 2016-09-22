@@ -46,7 +46,22 @@ function saveNew(res, req, type){
     });
 }
 
+/* Delete factory or brand with ID*/
+function deleteWithID(res, req){
+    factoryStore.remove(req.params.id, function(err, factory){
+    if (err){
+        res.writeHeader(500, {'Content-Type':'text/html'});
+        res.write("Error deleting file. Ensure that file with that ID exists.");
+        console.log(err);
+    }
+    res.writeHeader(200, {'Content-Type':'text/html'});
+    res.write("Deleted");
+    res.end();
+    });
+}
+
 exports.listAll = listAll;
 exports.listWithId = listWithId;
 exports.displayForm = displayForm;
 exports.saveNew = saveNew;
+exports.deleteWithID = deleteWithID;

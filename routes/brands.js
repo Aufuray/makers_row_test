@@ -18,4 +18,9 @@ router.post('/create', function(req, res, next) {
     companyHandler.saveNew(res, req, 'Brand');
 });
 
+/* DELETE brand with ID */
+router.get('/delete/:id', function(req, res, next) {
+    companyHandler.deleteWithID(res, req);
+});
+
 module.exports = router;
