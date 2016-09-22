@@ -40,13 +40,14 @@ Resources
 
 
 
-What you need to do:
+What was done:
 --------------------
  - Extend the factories resource to include the following fields **email, phone_number, city, state** 
  - Create a new resource for brands. This resource should have the endpoint /brands. The brands resource should have the same fields as the factories resource. 
  - We want to store both brands and factories in a companies table. For this exercise the companies table is represented by the json files in the /store/companies directories. A company_type property should be used to specify if the company is a brand or factory. Change the factory and brand resources to account for these changes.
  - Edit the tests to account for these changes.
- - Push the altered application to a public repository in your GitHub account, and send a link to that repository to dev@makersrow.com 
+ - Plus bonus section below
+ - Push the altered application to a public repository in your GitHub account.
 
 Bonus
 -----
